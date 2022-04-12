@@ -1,0 +1,168 @@
+/*indexContainer*/
+
+.container{
+    width: 100%;
+    height: auto;
+    background-color: rgb(216, 216, 216);
+}
+.container .inner-container{
+
+}
+.container .inner-container .index{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+}
+.container .inner-container .index .sections{
+    flex: 0 1 1400px;
+    height: auto;
+    /* border: 1px solid #eee; */
+    box-sizing: border-box;
+}
+.container .inner-container .index .sections .section.sec1{
+}
+.container .inner-container .index .sections .section.sec1 .sec-con{
+    position: relative;
+    /* background-color: #fff; */
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .gallery{
+    width: 500%;
+    height: inherit;
+    position: absolute;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .gallery>ul{
+    display: flex;
+    justify-content: space-between;
+    height: inherit;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .gallery>ul>li{
+    flex: 1;
+    height: inherit;
+    box-sizing: border-box;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .center-btn{
+    width: 100%;
+    height: auto;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .center-btn span.arrow{
+    display: block;
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid #fff; */
+    border-radius: 20%;
+    background-color:rgb(25, 17, 47);
+
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .center-btn span.arrow:hover{
+    cursor: pointer;
+    background-color:rgb(99, 43, 204);
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .bcon{
+    width: 100%;
+    /* border: 1px solid; */
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .bcon .items{
+    width: auto;
+    height: auto;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .bcon .items>ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .bcon .items>ul>li{
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid; */
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: rgb(62, 122, 142);
+}
+.container .inner-container .index .sections .section.sec1 .sec-con .bcon .items>ul>li:hover{
+    background-color: rgb(46, 46, 72);
+    cursor: pointer;
+}
+.container .inner-container .index .sections .section.sec2{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.container .inner-container .index .sections .section.sec2 .sec-con{
+    flex: 0 1 1000px;
+    height: auto;
+    /* border: 1px solid; */
+    padding: 0.5%;
+    box-sizing: border-box;
+}
+.container .inner-container .index .sections .section.sec2 .sec-con>ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container .inner-container .index .sections .section.sec2 .sec-con>ul>li{
+    flex: 0 1 30%;
+}
+.container .inner-container .index .sections .section.sec2 .sec-con>ul>li img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.on{
+    background-color: #fff;
+    transition: all 0.5s;
+
+}
+.gallery-animation{
+    transition: all 0.5s;
+}
+
+.popUp{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.popUp .popUp-con{
+    flex: 0 1 300px;
+    height: auto;
+    border: 1px solid;
+}
+.popUp .popUp-con img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+@media only screen and (max-width:767px){
+    .container .inner-container .index .sections .section.sec2 .sec-con>ul>li{
+        flex: 0 1 100%;
+    }
+
+}
